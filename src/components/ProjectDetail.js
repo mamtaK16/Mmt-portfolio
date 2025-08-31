@@ -6,7 +6,7 @@ import { SiJavascript, SiReact, SiTailwindcss } from 'react-icons/si';
 
 const projects = {
   "portfolio": {
-    title: "Portfolio Website",
+    title: "Portfolio website",
     description: "A modern portfolio website built with React and Tailwind CSS, featuring smooth animations and responsive design.",
     longDescription: `This portfolio website showcases my work and skills in web development. 
     Built with modern technologies and best practices, it features:

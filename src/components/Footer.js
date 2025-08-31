@@ -1,9 +1,21 @@
 import React from 'react';
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FiArrowUp } from 'react-icons/fi';
 
 const Footer = () => {
+  const handleBackToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
   return (
-    <footer className="bg-primary py-8">
+    <footer className="bg-primary py-8 relative">
+      {/* Back to top button */}
+      <button
+        onClick={handleBackToTop}
+        aria-label="Back to top"
+        className="absolute -top-5 right-4 md:right-6 h-10 w-10 rounded-xl bg-secondary text-white shadow-lg flex items-center justify-center hover:translate-y-[-2px] active:scale-95 transition-all"
+      >
+        <FiArrowUp className="text-xl" />
+      </button>
       <div className="max-w-screen-lg mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-textSecondary text-sm ">

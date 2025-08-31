@@ -36,7 +36,7 @@ export default function About() {
           <motion.div className="about-card" initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
             <div className="about-card-title">Certificates</div>
             <div className="about-card-body">
-              <div><strong>MERN Stack Development</strong></div>
+              <div><strong>MERN stack development</strong></div>
               <div>Aptron Pvt Ltd Institute • 2023</div>
             </div>
           </motion.div>
@@ -50,7 +50,7 @@ export default function About() {
           <motion.div className="about-card" initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
             <div className="about-card-title">Achievements</div>
             <div className="about-card-body">
-              <div>Open Source Contributor – active on GitHub</div>
+              <div>Open source contributor – active on GitHub</div>
             </div>
           </motion.div>
         </div>

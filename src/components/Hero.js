@@ -333,35 +333,7 @@ const Hero = () => {
             </motion.div>
 
             {/* Collaboration Section */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              whileHover={{ y: -10 }}
-              className="md:col-span-2 bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300"
-            >
-              <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-                <div className="md:w-1/2">
-                  <h3 className="text-2xl font-bold text-textPrimary mb-4">
-                    Open to <span className="text-secondary">collaborations</span>
-                  </h3>
-                  <p className="text-textSecondary text-lg">
-                    Whether a small minor project or your next big SaaS, I am always open to collaborations and new projects.
-                  </p>
-                </div>
-                <motion.div
-                  className="md:w-1/2"
-                  whileHover={{ scale: 1.05 }}
-                  transition={{ duration: 0.3 }}
-                >
-                  <img
-                    src={`${process.env.PUBLIC_URL}/image/code backgroundimage.jpg`}
-                    alt="MacBook Pro"
-                    className="w-full rounded-2xl shadow-xl"
-                  />
-                </motion.div>
-              </div>
-            </motion.div>
+            
           </motion.div>
         </div>
       </div>

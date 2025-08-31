@@ -92,7 +92,7 @@ const About = () => {
 
   const certificates = [
     {
-      name: "MERN Stack Development",
+      name: "MERN stack development",
       issuer: "Aptron Pvt Ltd Institute",
       date: "2023",
       link: "#"
@@ -102,7 +102,7 @@ const About = () => {
   const achievements = [
 
     {
-      title: "Open Source Contributor",
+      title: "Open source contributor",
       description: "Active contributor to various open-source projects with 1800+ contributions on GitHub",
       date: "2022-Present"
     }
@@ -186,7 +186,7 @@ const About = () => {
               transition={{ duration: 0.3 }}
               className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-xl"
             >
-              <h4 className="text-xl font-bold text-textPrimary mb-3">MERN Stack Development</h4>
+              <h4 className="text-xl font-bold text-textPrimary mb-3">MERN stack development</h4>
               <p className="text-secondary text-lg mb-2">Aptron Pvt Ltd Institute</p>
               <p className="text-textSecondary">2023</p>
             </motion.div>
@@ -212,7 +212,7 @@ const About = () => {
             >
               <h4 className="text-xl font-bold text-textPrimary mb-3">B.A (Political Honours)</h4>
               <p className="text-secondary text-lg mb-2">Delhi University • 2023</p>
-              <p className="text-textSecondary">Completed Bachelor's degree with focus on Political Science and related studies.</p>
+              <p className="text-textSecondary">Completed bachelor's degree with focus on Political Science and related studies.</p>
             </motion.div>
           </motion.div>
 
@@ -234,8 +234,8 @@ const About = () => {
               transition={{ duration: 0.3 }}
               className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-xl"
             >
-              <h4 className="text-xl font-bold text-textPrimary mb-3">Open Source Contributor</h4>
-              <p className="text-textSecondary">Active contributor to various open-source projects with 1100+ contributions on GitHub</p>
+              <h4 className="text-xl font-bold text-textPrimary mb-3">Open source contributor</h4>
+              <p className="text-textSecondary">Active contributor to various open-source projects with 1800+ contributions on GitHub</p>
             </motion.div>
           </motion.div>
         </motion.div>

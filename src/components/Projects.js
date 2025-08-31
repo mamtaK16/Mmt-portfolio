@@ -7,7 +7,7 @@ const Projects = () => {
   const projects = [
     {
       id: "portfolio",
-      title: "Portfolio Website",
+      title: "Portfolio website",
       description: "A modern portfolio website built with React and Tailwind CSS, featuring smooth animations and responsive design.",
       image: `${process.env.PUBLIC_URL}/image/portfolio-hero.png`,
       github: "https://github.com/mamtaK16/Portfolio",

@@ -2,11 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
 import { Link } from 'react-scroll';
-import { BsLinkedin, BsGithub, BsInstagram } from 'react-icons/bs';
 import { SiJavascript, SiTypescript, SiReact, SiVuedotjs, SiPython, SiCplusplus, SiAndroid, SiGit, SiNodedotjs, SiNestjs, SiCss3 } from 'react-icons/si';
-import { BiData } from 'react-icons/bi';
 import { FaPaintBrush, FaDatabase, FaLaptop } from 'react-icons/fa';
-import GitHubGraph from './GitHubGraph';
 
 const Hero = () => {
   const fadeInUp = {
@@ -143,9 +140,6 @@ const Hero = () => {
             className="flex gap-8 mt-10"
           >
             {[
-              // { href: "https://www.linkedin.com/in/mamta-kumari-48882b263", Icon: BsLinkedin, label: "LinkedIn" },
-              // { href: "https://github.com", Icon: BsGithub, label: "GitHub" },
-              // { href: "https://instagram.com", Icon: BsInstagram, label: "Instagram" }
             ].map((social, index) => (
               <motion.a
                 key={index}

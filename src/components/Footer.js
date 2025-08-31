@@ -2,27 +2,6 @@ import React from 'react';
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 const Footer = () => {
-  const socialLinks = [
-    {
-      id: 1,
-      icon: <FaGithub size={20} />,
-      href: '#',
-      label: 'GitHub',
-    },
-    {
-      id: 2,
-      icon: <FaLinkedin size={20} />,
-      href: 'https://www.linkedin.com/in/mamta-kumari-48882b263',
-      label: 'LinkedIn',
-    },
-    {
-      id: 3,
-      icon: <FaTwitter size={20} />,
-      href: '#',
-      label: 'Twitter',
-    },
-  ];
-
   return (
     <footer className="bg-primary py-8">
       <div className="max-w-screen-lg mx-auto px-4">
@@ -39,18 +18,13 @@ const Footer = () => {
             >
               Download Resume
             </a>
-            {/* {socialLinks.map(({ id, icon, href, label }) => (
-              <a
-                key={id}
-                href={href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-textSecondary hover:text-secondary transition-colors duration-300"
-                aria-label={label}
-              >
+            {/* Social links disabled for now
+            {[{ id:1, icon:<FaGithub size={20} />, href:'#', label:'GitHub' }, { id:2, icon:<FaLinkedin size={20} />, href:'https://www.linkedin.com/in/mamta-kumari-48882b263', label:'LinkedIn' }, { id:3, icon:<FaTwitter size={20} />, href:'#', label:'Twitter' }].map(({ id, icon, href, label }) => (
+              <a key={id} href={href} target="_blank" rel="noopener noreferrer" className="text-textSecondary hover:text-secondary transition-colors duration-300" aria-label={label}>
                 {icon}
               </a>
-            ))} */}
+            ))}
+            */}
           </div>
         </div>
       </div>

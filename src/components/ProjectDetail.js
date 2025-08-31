@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FaGithub, FaExternalLinkAlt, FaArrowLeft } from 'react-icons/fa';
-import { SiJavascript, SiReact, SiTailwindcss, SiNodedotjs, SiMongodb } from 'react-icons/si';
+import { SiJavascript, SiReact, SiTailwindcss } from 'react-icons/si';
 
 const projects = {
   "portfolio": {

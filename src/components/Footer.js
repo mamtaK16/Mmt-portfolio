@@ -28,7 +28,7 @@ const Footer = () => {
               download
               className="px-4 py-2 rounded-md border border-secondary/30 text-secondary hover:bg-secondary/10 transition-colors text-sm"
             >
-              Download Resume
+              Download resume
             </a>
             {/* Social links disabled for now
             {[{ id:1, icon:<FaGithub size={20} />, href:'#', label:'GitHub' }, { id:2, icon:<FaLinkedin size={20} />, href:'https://www.linkedin.com/in/mamta-kumari-48882b263', label:'LinkedIn' }, { id:3, icon:<FaTwitter size={20} />, href:'#', label:'Twitter' }].map(({ id, icon, href, label }) => (

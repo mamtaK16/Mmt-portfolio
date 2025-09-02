@@ -131,7 +131,7 @@ const Hero = () => {
               download
               className="group relative inline-flex items-center justify-center px-8 py-3 rounded-lg border-2 border-secondary/20 hover:border-secondary text-secondary hover:bg-secondary/5 transition-all duration-300"
             >
-              Download Resume
+              Download resume
             </motion.a>
           </motion.div>
 
@@ -181,7 +181,7 @@ const Hero = () => {
               />
               <div className="flex flex-col">
                 <span className="text-2xl font-bold text-textPrimary">1.8</span>
-                <span className="text-sm text-textSecondary/70">Years of Experience</span>
+                <span className="text-sm text-textSecondary/70">Years of experience</span>
               </div>
             </motion.div>
             

@@ -13,22 +13,22 @@ const projects = {
     
     • Responsive design that works seamlessly across all devices
     • Smooth animations and transitions using Framer Motion
-    • Dark/Light theme support
+    // • Dark/Light theme support
     • Interactive components and dynamic content loading
     • Optimized performance and SEO`,
-    images: [`${process.env.PUBLIC_URL}/image/code backgroundimage.jpg`],
+    images: [`${process.env.PUBLIC_URL}/image/portfolio-hero.png`],
     technologies: [
       { name: "React", icon: SiReact },
       { name: "Tailwind CSS", icon: SiTailwindcss },
       { name: "JavaScript", icon: SiJavascript }
     ],
-    github: "https://github.com/yourusername/portfolio",
+    github: "https://github.com/mamtaK16/Portfolio",
     live: "https://yourportfolio.com",
     features: [
       "Responsive Design",
       "Animation Effects",
       "Dark/Light Theme",
-      "Contact Form",
+      "Contact",
       "Project Showcase"
     ]
   },
@@ -45,7 +45,7 @@ const ProjectDetail = () => {
         <div className="text-center">
           <h2 className="text-2xl font-bold text-textPrimary mb-4">Project not found</h2>
           <Link to="/" className="text-secondary hover:text-secondary/80">
-            Return to Home
+            Return to home
           </Link>
         </div>
       </div>
@@ -129,7 +129,7 @@ const ProjectDetail = () => {
               <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg">
                 <h2 className="text-xl font-semibold text-textPrimary mb-4">Links</h2>
                 <div className="space-y-4">
-                  <a
+                  {/* <a
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -137,9 +137,9 @@ const ProjectDetail = () => {
                   >
                     <FaGithub className="w-6 h-6 mr-2" />
                     View source
-                  </a>
+                  </a> */}
                   <a
-                    href={project.live}
+                    href={" https://mamta-portfolio.netlify.app/"}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center text-textSecondary hover:text-secondary transition-colors"

@@ -186,7 +186,7 @@ const About = () => {
               whileHover={{ y: -10 }}
               transition={{ duration: 0.3 }}
             
-              className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl w-full max-w-2xl h-auto"
+              className="bg-white/80 backdrop-blur-sm rounded-2xl p-5 md:p-6 shadow-lg hover:shadow-xl w-full max-w-xl mx-auto h-auto"
             >
               <h4 className="text-xl font-bold text-textPrimary mb-3"   >MERN stack development</h4>
               <p className="text-secondary text-lg mb-2" >Aptron Pvt Ltd Institute • 2023</p>
@@ -213,7 +213,7 @@ const About = () => {
             <motion.div 
               whileHover={{ y: -10 }}
               transition={{ duration: 0.3 }}
-              className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl w-full max-w-2xl h-auto"
+              className="bg-white/80 backdrop-blur-sm rounded-2xl p-5 md:p-6 shadow-lg hover:shadow-xl w-full max-w-xl mx-auto h-auto"
             >
               <h4 className="text-xl font-bold text-textPrimary mb-3">B.A (Political Honours)</h4>
               <p className="text-secondary text-lg mb-2">Delhi University • 2023</p>

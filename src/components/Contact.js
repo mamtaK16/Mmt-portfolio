@@ -177,19 +177,19 @@ const Contact = () => {
                 viewport={{ once: true }}
                 className="rounded-2xl bg-white/80 backdrop-blur-sm border border-black/10 text-textPrimary p-6 md:p-8 shadow-xl"
               >
-                <h3 className="text-xl md:text-2xl font-bold mb-2">Ready to Build Something Amazing?</h3>
+                <h3 className="text-xl md:text-2xl font-bold mb-2">Ready to build something amazing?</h3>
                 <a
                   href="mailto:mk6736767@gmail.com"
                   className="inline-flex items-center gap-2 rounded-xl bg-purple-500 hover:bg-purple-600 active:scale-95 transition-all text-white px-4 py-2.5 font-semibold shadow-lg"
                 >
-                  <FiMail /> Get In Touch
+                  <FiMail /> Get in touch
                 </a>
 
                 {/* stats */}
                 <div className="mt-6 grid grid-cols-2 gap-4">
                   <div className="rounded-xl bg-white border border-black/10 p-4 text-center">
                     <div className="text-xl font-extrabold text-textPrimary">24/7</div>
-                    <div className="text-sm text-textSecondary">Response Time</div>
+                    <div className="text-sm text-textSecondary">Response time</div>
                   </div>
                   <div className="rounded-xl bg-white border border-black/10 p-4 text-center">
                     <div className="text-xl font-extrabold text-textPrimary">100%</div>

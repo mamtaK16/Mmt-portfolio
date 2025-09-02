@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Bars3Icon as MenuIcon, XMarkIcon as XIcon } from '@heroicons/react/24/outline';
+import { MoonIcon, SunIcon } from '@heroicons/react/24/solid';
 
-const Navbar = () => {
+const Navbar = ({ onToggleTheme, theme }) => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -74,7 +75,7 @@ const Navbar = () => {
       variants={navVariants}
       className={`fixed w-full z-50 transition-all duration-300 ${
         shadow 
-          ? 'bg-white/80 backdrop-blur-md shadow-lg py-4' 
+          ? 'bg-white/80 dark:bg-slate-900/70 backdrop-blur-md shadow-lg py-4' 
           : 'bg-transparent py-6'
       }`}
     >
@@ -102,7 +103,7 @@ const Navbar = () => {
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-base font-bold cursor-pointer text-textSecondary hover:text-secondary transition-colors relative group"
+                  className="text-base font-bold cursor-pointer text-textSecondary dark:text-slate-300 hover:text-secondary transition-colors relative group"
                 >
                   {label}
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-secondary transition-all group-hover:w-full"></span>
@@ -115,7 +116,7 @@ const Navbar = () => {
                   offset={-100}
                   duration={500}
                   activeClass="text-secondary"
-                  className="text-base font-bold cursor-pointer text-textSecondary hover:text-secondary transition-colors relative group"
+                  className="text-base font-bold cursor-pointer text-textSecondary dark:text-slate-300 hover:text-secondary transition-colors relative group"
                 >
                   {label}
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-secondary transition-all group-hover:w-full"></span>
@@ -123,6 +124,16 @@ const Navbar = () => {
               )}
             </motion.div>
           ))}
+
+          <button
+            onClick={onToggleTheme}
+            aria-label="Toggle theme"
+            title={theme === 'dark' ? 'Switch to light' : 'Switch to dark'}
+            className="inline-flex items-center gap-2 rounded-md border border-[var(--border)] px-3 py-1.5 text-sm font-medium text-[var(--text)] hover:bg-[var(--surface)]/70 dark:hover:bg-white/5"
+          >
+            {theme === 'dark' ? <SunIcon className="w-4 h-4" /> : <MoonIcon className="w-4 h-4" />}
+            <span className="hidden lg:inline">{theme === 'dark' ? 'Light' : 'Dark'}</span>
+          </button>
         </div>
 
         <motion.div 
@@ -155,7 +166,7 @@ const Navbar = () => {
             animate="open"
             exit="closed"
             variants={mobileMenuVariants}
-            className="fixed top-0 right-0 w-[60%] h-screen bg-white p-10 md:hidden shadow-2xl"
+            className="fixed top-0 right-0 w-[60%] h-screen bg-white dark:bg-slate-900 p-10 md:hidden shadow-2xl"
           >
             <div className="flex flex-col gap-y-8 mt-16">
               {links.map(({ id, link, label, isExternal, href }, index) => (
@@ -170,7 +181,7 @@ const Navbar = () => {
                       href={href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-lg font-bold cursor-pointer text-textSecondary hover:text-secondary transition-colors"
+                      className="text-lg font-bold cursor-pointer text-textSecondary dark:text-slate-300 hover:text-secondary transition-colors"
                     >
                       {label}
                     </a>
@@ -183,13 +194,23 @@ const Navbar = () => {
                       duration={500}
                       onClick={() => setNav(false)}
                       activeClass="text-secondary"
-                      className="text-lg font-bold cursor-pointer text-textSecondary hover:text-secondary transition-colors"
+                      className="text-lg font-bold cursor-pointer text-textSecondary dark:text-slate-300 hover:text-secondary transition-colors"
                     >
                       {label}
                     </Link>
                   )}
                 </motion.div>
               ))}
+
+              <button
+                onClick={onToggleTheme}
+                aria-label="Toggle theme"
+                title={theme === 'dark' ? 'Switch to light' : 'Switch to dark'}
+                className="mt-6 inline-flex items-center gap-3 rounded-md border border-[var(--border)] px-4 py-2 text-base font-medium text-[var(--text)] hover:bg-[var(--surface)]/70 dark:hover:bg-white/5"
+              >
+                {theme === 'dark' ? <SunIcon className="w-5 h-5" /> : <MoonIcon className="w-5 h-5" />}
+                <span>{theme === 'dark' ? 'Light theme' : 'Dark theme'}</span>
+              </button>
             </div>
           </motion.div>
         )}

@@ -9,10 +9,27 @@
     font-family: 'Raleway', sans-serif;
     scroll-behavior: smooth;
   }
+
+  :root {
+    --bg: #ffffff;
+    --surface: #ffffff;
+    --text: #1F2937;
+    --muted: #4B5563;
+    --border: #e5e7eb;
+  }
+
+  .dark {
+    --bg: #0b1020;
+    --surface: #0f172a;
+    --text: #e5e7eb;
+    --muted: #94a3b8;
+    --border: #1f2937;
+  }
 }
 
 body {
   margin: 0;
   padding: 0;
-  background-color: #0A192F;
+  background-color: var(--bg);
+  color: var(--text);
 } 

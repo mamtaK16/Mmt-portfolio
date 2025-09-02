@@ -7,7 +7,7 @@ const Footer = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
   return (
-    <footer className="bg-primary py-8 relative">
+    <footer className="bg-primary dark:bg-slate-950 py-8 relative">
       {/* Back to top button */}
       <button
         onClick={handleBackToTop}
@@ -18,7 +18,7 @@ const Footer = () => {
       </button>
       <div className="max-w-screen-lg mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="text-textSecondary text-sm ">
+          <div className="text-textSecondary dark:text-slate-400 text-sm ">
             © {new Date().getFullYear()} Mamta. Short and sweet.
           </div>
           
@@ -32,7 +32,7 @@ const Footer = () => {
             </a>
             {/* Social links disabled for now
             {[{ id:1, icon:<FaGithub size={20} />, href:'#', label:'GitHub' }, { id:2, icon:<FaLinkedin size={20} />, href:'https://www.linkedin.com/in/mamta-kumari-48882b263', label:'LinkedIn' }, { id:3, icon:<FaTwitter size={20} />, href:'#', label:'Twitter' }].map(({ id, icon, href, label }) => (
-              <a key={id} href={href} target="_blank" rel="noopener noreferrer" className="text-textSecondary hover:text-secondary transition-colors duration-300" aria-label={label}>
+              <a key={id} href={href} target="_blank" rel="noopener noreferrer" className="text-textSecondary dark:text-slate-300 hover:text-secondary transition-colors duration-300" aria-label={label}>
                 {icon}
               </a>
             ))}

@@ -26,7 +26,7 @@ const Experience = () => {
   const selectedExperience = experiences.find((e) => e.id === expandedId) || null;
 
   return (
-    <div name="experience" className="relative w-full bg-gradient-to-tr from-white via-accent to-white pt-16 pb-16 overflow-hidden">
+    <div name="experience" className="relative w-full bg-gradient-to-tr from-white via-accent to-white dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 pt-16 pb-16 overflow-hidden">
       {/* Animated background shapes */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
@@ -55,7 +55,7 @@ const Experience = () => {
           className="text-center mb-8"
         >
           <motion.h2 
-            className="text-6xl font-bold text-textPrimary mb-4"
+            className="text-6xl font-bold text-textPrimary dark:text-slate-100 mb-4"
             initial={{ opacity: 0, scale: 0.5 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.4, ease: "easeOut" }}
@@ -63,7 +63,7 @@ const Experience = () => {
             Professional <span className="text-secondary">experience</span>
           </motion.h2>
           <motion.p 
-            className="text-textSecondary text-xl max-w-2xl mx-auto"
+            className="text-textSecondary dark:text-slate-300 text-xl max-w-2xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: 0.1 }}
@@ -114,18 +114,18 @@ const Experience = () => {
             transition={{ duration: 0.3 }}
             className="mt-8 max-w-5xl mx-auto"
           >
-            <h3 className="text-3xl font-bold text-textPrimary mb-4 text-center">
+            <h3 className="text-3xl font-bold text-textPrimary dark:text-slate-100 mb-4 text-center">
               {selectedExperience.role} at {selectedExperience.company}
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {selectedExperience.keyPoints.map((point, idx) => (
                 <div
                   key={idx}
-                  className="bg-white/90 backdrop-blur-sm rounded-xl p-5 shadow hover:shadow-lg transition-all duration-300"
+                  className="bg-white/90 dark:bg-slate-800/70 backdrop-blur-sm rounded-xl p-5 shadow hover:shadow-lg transition-all duration-300"
                 >
                   <div className="flex items-start gap-3">
                     <FaCheckCircle className="text-secondary text-2xl mt-1" />
-                    <p className="text-textSecondary">{point}</p>
+                    <p className="text-textSecondary dark:text-slate-300">{point}</p>
                   </div>
                 </div>
               ))}

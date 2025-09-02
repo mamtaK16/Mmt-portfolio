@@ -18,7 +18,7 @@ const Projects = () => {
   ];
 
   return (
-    <div name="projects" className="relative w-full min-h-screen bg-gradient-to-tr from-white via-accent to-white pt-20 pb-20 overflow-hidden">
+    <div name="projects" className="relative w-full min-h-screen bg-gradient-to-tr from-white via-accent to-white dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 pt-20 pb-20 overflow-hidden">
       {/* Animated background shapes */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
@@ -46,7 +46,7 @@ const Projects = () => {
           className="text-center mb-16"
         >
           <motion.h2 
-            className="text-6xl font-bold text-textPrimary mb-6"
+            className="text-6xl font-bold text-textPrimary dark:text-slate-100 mb-6"
             initial={{ opacity: 0, scale: 0.5 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
@@ -54,7 +54,7 @@ const Projects = () => {
             Featured <span className="text-secondary">projects</span>
           </motion.h2>
           <motion.p 
-            className="text-textSecondary text-xl max-w-2xl mx-auto"
+            className="text-textSecondary dark:text-slate-300 text-xl max-w-2xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -77,7 +77,7 @@ const Projects = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               whileHover={{ y: -10, transition: { duration: 0.3 } }}
-              className="bg-white/80 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
+              className="bg-white/80 dark:bg-slate-800/70 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
             >
               <div className="relative overflow-hidden aspect-video">
                 <motion.img
@@ -91,10 +91,10 @@ const Projects = () => {
               </div>
 
               <div className="p-8">
-                <h3 className="text-2xl font-bold text-textPrimary mb-3">
+                <h3 className="text-2xl font-bold text-textPrimary dark:text-slate-100 mb-3">
                   {project.title}
                 </h3>
-                <p className="text-textSecondary text-lg mb-6 line-clamp-2">
+                <p className="text-textSecondary dark:text-slate-300 text-lg mb-6 line-clamp-2">
                   {project.description}
                 </p>
 
@@ -121,7 +121,7 @@ const Projects = () => {
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-textSecondary hover:text-secondary transition-colors"
+                      className="text-textSecondary dark:text-slate-300 hover:text-secondary transition-colors"
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.95 }}
                     >

@@ -43,7 +43,7 @@ const ProjectDetail = () => {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
-          <h2 className="text-2xl font-bold text-textPrimary mb-4">Project not found</h2>
+          <h2 className="text-2xl font-bold text-textPrimary dark:text-slate-100 mb-4">Project not found</h2>
           <Link to="/" className="text-secondary hover:text-secondary/80">
             Return to home
           </Link>
@@ -68,12 +68,12 @@ const ProjectDetail = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h1 className="text-4xl md:text-5xl font-bold text-textPrimary mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold text-textPrimary dark:text-slate-100 mb-6">
             {project.title}
           </h1>
 
           {/* Project Image */}
-          <div className="relative rounded-xl overflow-hidden mb-8 bg-white/80 backdrop-blur-sm shadow-lg">
+          <div className="relative rounded-xl overflow-hidden mb-8 bg-white/80 dark:bg-slate-800/70 backdrop-blur-sm shadow-lg">
             <img 
               src={project.images[0]} 
               alt={project.title}
@@ -84,20 +84,20 @@ const ProjectDetail = () => {
           {/* Project Info */}
           <div className="grid md:grid-cols-3 gap-8">
             <div className="md:col-span-2">
-              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg mb-8">
-                <h2 className="text-2xl font-semibold text-textPrimary mb-4">Overview</h2>
-                <p className="text-textSecondary whitespace-pre-line">
+              <div className="bg-white/80 dark:bg-slate-800/70 backdrop-blur-sm rounded-xl p-6 shadow-lg mb-8">
+                <h2 className="text-2xl font-semibold text-textPrimary dark:text-slate-100 mb-4">Overview</h2>
+                <p className="text-textSecondary dark:text-slate-300 whitespace-pre-line">
                   {project.longDescription}
                 </p>
               </div>
 
-              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg">
-                <h2 className="text-2xl font-semibold text-textPrimary mb-4">Key features</h2>
+              <div className="bg-white/80 dark:bg-slate-800/70 backdrop-blur-sm rounded-xl p-6 shadow-lg">
+                <h2 className="text-2xl font-semibold text-textPrimary dark:text-slate-100 mb-4">Key features</h2>
                 <ul className="grid grid-cols-2 gap-4">
                   {project.features.map((feature, index) => (
                     <li 
                       key={index}
-                      className="flex items-center text-textSecondary"
+                      className="flex items-center text-textSecondary dark:text-slate-300"
                     >
                       <span className="w-2 h-2 bg-secondary rounded-full mr-2" />
                       {feature}
@@ -109,13 +109,13 @@ const ProjectDetail = () => {
 
             <div className="space-y-6">
               {/* Technologies */}
-              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg">
-                <h2 className="text-xl font-semibold text-textPrimary mb-4">Technologies</h2>
+              <div className="bg-white/80 dark:bg-slate-800/70 backdrop-blur-sm rounded-xl p-6 shadow-lg">
+                <h2 className="text-xl font-semibold text-textPrimary dark:text-slate-100 mb-4">Technologies</h2>
                 <div className="grid grid-cols-2 gap-4">
                   {project.technologies.map((tech, index) => (
                     <motion.div
                       key={index}
-                      className="flex items-center text-textSecondary"
+                      className="flex items-center text-textSecondary dark:text-slate-300"
                       whileHover={{ scale: 1.05 }}
                     >
                       <tech.icon className="w-6 h-6 text-secondary mr-2" />
@@ -126,8 +126,8 @@ const ProjectDetail = () => {
               </div>
 
               {/* Links */}
-              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg">
-                <h2 className="text-xl font-semibold text-textPrimary mb-4">Links</h2>
+              <div className="bg-white/80 dark:bg-slate-800/70 backdrop-blur-sm rounded-xl p-6 shadow-lg">
+                <h2 className="text-xl font-semibold text-textPrimary dark:text-slate-100 mb-4">Links</h2>
                 <div className="space-y-4">
                   {/* <a
                     href={project.github}
@@ -142,7 +142,7 @@ const ProjectDetail = () => {
                     href={" https://mamta-portfolio.netlify.app/"}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center text-textSecondary hover:text-secondary transition-colors"
+                    className="flex items-center text-textSecondary dark:text-slate-300 hover:text-secondary transition-colors"
                   >
                     <FaExternalLinkAlt className="w-5 h-5 mr-2" />
                     Live demo

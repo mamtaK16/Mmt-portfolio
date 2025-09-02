@@ -54,7 +54,7 @@ const About = () => {
       description: "Project hosting & collaboration"
     },
     {
-      icon: <SiOpenai className="w-12 h-12" style={{ color: '#412991' }} />,
+      icon: <SiOpenai className="w-12 h-12" style={{ color: '#000000' }} />,
       name: "OpenAI",
       description: "AI integration & development"
     },
@@ -109,7 +109,7 @@ const About = () => {
   ];
 
   return (
-    <div name="about" className="relative w-full min-h-screen bg-gradient-to-tr from-white via-accent to-white pt-20 pb-20 overflow-hidden">
+    <div name="about" className="relative w-full min-h-screen bg-gradient-to-tr from-white via-accent to-white dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 pt-20 pb-20 overflow-hidden">
       {/* Animated background shapes */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
@@ -139,7 +139,7 @@ const About = () => {
           className="text-center mb-20"
         >
           <motion.h2 
-            className="text-6xl font-bold text-textPrimary mb-6"
+            className="text-6xl font-bold text-textPrimary dark:text-slate-100 mb-6"
             initial={{ opacity: 0, scale: 0.5 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
@@ -152,10 +152,10 @@ const About = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <p className="text-xl text-textSecondary">
+            <p className="text-xl text-textSecondary dark:text-slate-300">
               A passionate frontend developer focused on creating impactful web solutions. Dedicated to building user-friendly and engaging digital experiences.
             </p>
-            <p className="text-lg text-textSecondary leading-relaxed">
+            <p className="text-lg text-textSecondary dark:text-slate-300 leading-relaxed">
               My journey into coding began with a curiosity about how systems work and how code enables functionality used by people worldwide. Over time, I discovered that coding is not just a skill but a fascinating way to create innovative solutions and bring ideas to life—an experience that feels almost magical.
             </p>
           </motion.div>
@@ -180,17 +180,17 @@ const About = () => {
               <div className="text-secondary">
                 <FaCertificate className="w-8 h-8" />
               </div>
-              <h3 className="text-2xl font-bold text-textPrimary">Certificates</h3>
+              <h3 className="text-2xl font-bold text-textPrimary dark:text-slate-100">Certificates</h3>
             </div>
             <motion.div 
               whileHover={{ y: -10 }}
               transition={{ duration: 0.3 }}
             
-              className="bg-white/80 backdrop-blur-sm rounded-2xl p-5 md:p-6 shadow-lg hover:shadow-xl w-full max-w-xl mx-auto h-auto"
+              className="bg-white/80 dark:bg-slate-800/70 backdrop-blur-sm rounded-2xl p-5 md:p-6 shadow-lg hover:shadow-xl w-full max-w-xl mx-auto h-auto"
             >
-              <h4 className="text-xl font-bold text-textPrimary mb-3"   >MERN stack development</h4>
+              <h4 className="text-xl font-bold text-textPrimary dark:text-slate-100 mb-3"   >MERN stack development</h4>
               <p className="text-secondary text-lg mb-2" >Aptron Pvt Ltd Institute • 2023</p>
-              <p className="text-textSecondary">
+              <p className="text-textSecondary dark:text-slate-300">
               Focused on core MERN stack technologies and industry-relevant skills development.
 </p> 
 
@@ -208,16 +208,16 @@ const About = () => {
               <div className="text-secondary">
                 <FaGraduationCap className="w-8 h-8" />
               </div>
-              <h3 className="text-2xl font-bold text-textPrimary">Education</h3>
+              <h3 className="text-2xl font-bold text-textPrimary dark:text-slate-100">Education</h3>
             </div>
             <motion.div 
               whileHover={{ y: -10 }}
               transition={{ duration: 0.3 }}
-              className="bg-white/80 backdrop-blur-sm rounded-2xl p-5 md:p-6 shadow-lg hover:shadow-xl w-full max-w-xl mx-auto h-auto"
+              className="bg-white/80 dark:bg-slate-800/70 backdrop-blur-sm rounded-2xl p-5 md:p-6 shadow-lg hover:shadow-xl w-full max-w-xl mx-auto h-auto"
             >
-              <h4 className="text-xl font-bold text-textPrimary mb-3">B.A (Political Honours)</h4>
+              <h4 className="text-xl font-bold text-textPrimary dark:text-slate-100 mb-3">B.A (Political Honours)</h4>
               <p className="text-secondary text-lg mb-2">Delhi University • 2023</p>
-              <p className="text-textSecondary">Completed bachelor's degree with focus on Political Science and related studies.</p>
+              <p className="text-textSecondary dark:text-slate-300">Completed bachelor's degree with focus on Political Science and related studies.</p>
             </motion.div>
           </motion.div>
 
@@ -251,7 +251,7 @@ const About = () => {
             <div className="text-secondary">
               <FaCode className="w-8 h-8" />
             </div>
-            <h3 className="text-2xl font-bold text-textPrimary">Technical skills & tools</h3>
+            <h3 className="text-2xl font-bold text-textPrimary dark:text-slate-100">Technical skills & tools</h3>
           </div>
           <motion.div 
             initial={{ opacity: 0 }}
@@ -267,19 +267,19 @@ const About = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3, delay: index * 0.1 }}
                 whileHover={{ y: -10, scale: 1.05 }}
-                className="group relative bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer overflow-hidden border border-transparent hover:border-purple-500/20"
+                className="group relative bg-white/80 dark:bg-slate-800/70 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer overflow-hidden border border-transparent hover:border-purple-500/20"
               >
                 {/* Front side */}
                 <div className="flex flex-col items-center gap-4 group-hover:opacity-0 transition-opacity duration-300">
                   <div className="text-secondary transition-transform duration-300 group-hover:scale-90">
                     {skill.icon}
                   </div>
-                  <p className="text-textSecondary text-lg font-medium">{skill.name}</p>
+                  <p className="text-textSecondary dark:text-slate-300 text-lg font-medium">{skill.name}</p>
                 </div>
 
                 {/* Back side */}
-                <div className="absolute inset-0 flex items-center justify-center p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white/90">
-                  <p className="text-textSecondary text-base text-center font-medium">
+                <div className="absolute inset-0 flex items-center justify-center p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white/90 dark:bg-slate-800/80">
+                  <p className="text-textSecondary dark:text-slate-300 text-base text-center font-medium">
                     {skill.description}
                   </p>
                 </div>

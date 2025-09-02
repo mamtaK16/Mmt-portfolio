@@ -61,7 +61,7 @@ const ExperienceDetail = () => {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
-          <h2 className="text-2xl font-bold text-textPrimary mb-4">Experience not found</h2>
+          <h2 className="text-2xl font-bold text-textPrimary dark:text-slate-100 mb-4">Experience not found</h2>
           <Link to="/" className="text-secondary hover:text-secondary/80">
             Return to Home
           </Link>
@@ -87,11 +87,11 @@ const ExperienceDetail = () => {
           transition={{ duration: 0.5 }}
         >
           {/* Header */}
-          <div className="bg-white/80 backdrop-blur-sm rounded-xl p-8 shadow-lg mb-8">
-            <h1 className="text-4xl md:text-5xl font-bold text-textPrimary mb-4">
+          <div className="bg-white/80 dark:bg-slate-800/70 backdrop-blur-sm rounded-xl p-8 shadow-lg mb-8">
+            <h1 className="text-4xl md:text-5xl font-bold text-textPrimary dark:text-slate-100 mb-4">
               {experience.role}
             </h1>
-            <div className="flex flex-wrap gap-4 text-textSecondary">
+            <div className="flex flex-wrap gap-4 text-textSecondary dark:text-slate-300">
               <div className="flex items-center">
                 <FaBuilding className="mr-2 text-secondary" />
                 {experience.company}
@@ -110,21 +110,21 @@ const ExperienceDetail = () => {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="md:col-span-2 space-y-8">
               {/* Description */}
-              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg">
-                <h2 className="text-2xl font-semibold text-textPrimary mb-4">Role overview</h2>
-                <p className="text-textSecondary whitespace-pre-line">
+              <div className="bg-white/80 dark:bg-slate-800/70 backdrop-blur-sm rounded-xl p-6 shadow-lg">
+                <h2 className="text-2xl font-semibold text-textPrimary dark:text-slate-100 mb-4">Role overview</h2>
+                <p className="text-textSecondary dark:text-slate-300 whitespace-pre-line">
                   {experience.description}
                 </p>
               </div>
 
               {/* Key Projects */}
-              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg">
-                <h2 className="text-2xl font-semibold text-textPrimary mb-4">Key projects</h2>
+              <div className="bg-white/80 dark:bg-slate-800/70 backdrop-blur-sm rounded-xl p-6 shadow-lg">
+                <h2 className="text-2xl font-semibold text-textPrimary dark:text-slate-100 mb-4">Key projects</h2>
                 <div className="space-y-6">
                   {experience.projects.map((project, index) => (
                     <div key={index} className="border-l-2 border-secondary pl-4">
                       <div className="flex items-center gap-2 mb-2">
-                        <h3 className="text-xl font-semibold text-textPrimary">{project.name}</h3>
+                        <h3 className="text-xl font-semibold text-textPrimary dark:text-slate-100">{project.name}</h3>
                         {project.link && (
                           <a
                             href={project.link}
@@ -136,7 +136,7 @@ const ExperienceDetail = () => {
                           </a>
                         )}
                       </div>
-                      <p className="text-textSecondary">{project.description}</p>
+                      <p className="text-textSecondary dark:text-slate-300">{project.description}</p>
                     </div>
                   ))}
                 </div>
@@ -145,13 +145,13 @@ const ExperienceDetail = () => {
 
             <div className="space-y-8">
               {/* Achievements */}
-              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg">
-                <h2 className="text-xl font-semibold text-textPrimary mb-4">Key achievements</h2>
+              <div className="bg-white/80 dark:bg-slate-800/70 backdrop-blur-sm rounded-xl p-6 shadow-lg">
+                <h2 className="text-xl font-semibold text-textPrimary dark:text-slate-100 mb-4">Key achievements</h2>
                 <ul className="space-y-3">
                   {experience.achievements.map((achievement, index) => (
                     <li 
                       key={index}
-                      className="flex items-start text-textSecondary"
+                      className="flex items-start text-textSecondary dark:text-slate-300"
                     >
                       <span className="w-2 h-2 bg-secondary rounded-full mr-2 mt-2" />
                       {achievement}
@@ -161,8 +161,8 @@ const ExperienceDetail = () => {
               </div>
 
               {/* Technologies */}
-              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg">
-                <h2 className="text-xl font-semibold text-textPrimary mb-4">Technologies used</h2>
+              <div className="bg-white/80 dark:bg-slate-800/70 backdrop-blur-sm rounded-xl p-6 shadow-lg">
+                <h2 className="text-xl font-semibold text-textPrimary dark:text-slate-100 mb-4">Technologies used</h2>
                 <div className="flex flex-wrap gap-2">
                   {experience.technologies.map((tech, index) => (
                     <span

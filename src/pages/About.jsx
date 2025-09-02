@@ -55,12 +55,12 @@ export default function About() {
           </motion.div>
         </div>
 
-        <h3 style={{ margin: '28px 0 16px' }}>Technical skills & tools</h3>
+        <h3 style={{ margin: '28px 0 16px', color: 'var(--text)' }}>Technical skills & tools</h3>
         <div className="icon-grid">
           {SKILL_ICONS.map((icon) => (
             <div key={icon.name} className="icon-tile" title={icon.name}>
               <img src={icon.src} alt={icon.name} />
-              <span>{icon.name}</span>
+              <span style={{ color: 'var(--muted)' }}>{icon.name}</span>
             </div>
           ))}
         </div>

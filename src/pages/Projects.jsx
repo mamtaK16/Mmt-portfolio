@@ -32,7 +32,7 @@ export default function Projects() {
           {PROJECTS.map((p, idx) => (
             <motion.article key={p.title} className="card" initial={{ opacity: 0, y: 14 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: idx * 0.04 }}>
               <h4 className="card-title">{p.title}</h4>
-              <p className="card-desc">{p.description}</p>
+              <p className="card-desc" style={{ color: 'var(--muted)' }}>{p.description}</p>
               <div className="card-actions">
                 <a className="btn btn-small btn-primary" href={p.demo} target="_blank" rel="noreferrer"><FaExternalLinkAlt /> Demo</a>
                 <a className="btn btn-small btn-outline" href={p.code} target="_blank" rel="noreferrer"><FaGithub /> Code</a>

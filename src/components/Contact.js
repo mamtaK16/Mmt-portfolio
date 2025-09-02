@@ -61,7 +61,7 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="relative w-full min-h-screen overflow-hidden bg-gradient-to-tr from-white via-accent to-white"
+      className="relative w-full min-h-screen overflow-hidden bg-gradient-to-tr from-white via-accent to-white dark:from-slate-950 dark:via-slate-900 dark:to-slate-950"
     >
       {/* subtle animated background shapes for light theme */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -92,7 +92,7 @@ const Contact = () => {
             className="text-center mb-14"
           >
             <motion.h2
-              className="text-4xl md:text-5xl font-bold text-textPrimary mb-3"
+              className="text-4xl md:text-5xl font-bold text-textPrimary dark:text-slate-100 mb-3"
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.4, ease: 'easeOut' }}
@@ -100,7 +100,7 @@ const Contact = () => {
               Let's <span className="text-secondary">connect</span>
             </motion.h2>
             <motion.p
-              className="text-base md:text-lg text-textSecondary max-w-2xl mx-auto"
+              className="text-base md:text-lg text-textSecondary dark:text-slate-300 max-w-2xl mx-auto"
               initial={{ opacity: 0, y: 12 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.1 }}
@@ -150,7 +150,7 @@ const Contact = () => {
                   href="mailto:mk6736767@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="absolute -top-3 left-8 md:left-12 p-3 rounded-xl bg-white text-textPrimary border border-black/10 shadow"
+                  className="absolute -top-3 left-8 md:left-12 p-3 rounded-xl bg-white text-slate-900 border border-black/10 shadow"
                   whileHover={{ rotate: [0, -10, 10, 0], scale: 1.05 }}
                   transition={{ duration: 0.3 }}
                   aria-label="Email"
@@ -161,7 +161,7 @@ const Contact = () => {
                   href="https://www.linkedin.com/in/mamta-kumari-48882b263"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="absolute top-24 -left-1 md:-left-3 p-3 rounded-xl bg-white text-textPrimary border border-black/10 shadow"
+                  className="absolute top-24 -left-1 md:-left-3 p-3 rounded-xl bg-white text-slate-900 border border-black/10 shadow"
                   whileHover={{ rotate: [0, -10, 10, 0], scale: 1.05 }}
                   transition={{ duration: 0.3 }}
                   aria-label="LinkedIn"
@@ -175,7 +175,7 @@ const Contact = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="rounded-2xl bg-white/80 backdrop-blur-sm border border-black/10 text-textPrimary p-6 md:p-8 shadow-xl"
+                className="rounded-2xl bg-white/80 dark:bg-slate-800/70 backdrop-blur-sm border border-black/10 text-textPrimary dark:text-slate-100 p-6 md:p-8 shadow-xl"
               >
                 <h3 className="text-xl md:text-2xl font-bold mb-2">Ready to build something amazing?</h3>
                 <a
@@ -187,13 +187,13 @@ const Contact = () => {
 
                 {/* stats */}
                 <div className="mt-6 grid grid-cols-2 gap-4">
-                  <div className="rounded-xl bg-white border border-black/10 p-4 text-center">
-                    <div className="text-xl font-extrabold text-textPrimary">24/7</div>
-                    <div className="text-sm text-textSecondary">Response time</div>
+                  <div className="rounded-xl bg-white dark:bg-slate-800 border border-black/10 p-4 text-center">
+                    <div className="text-xl font-extrabold text-textPrimary dark:text-slate-100">24/7</div>
+                    <div className="text-sm text-textSecondary dark:text-slate-300">Response time</div>
                   </div>
-                  <div className="rounded-xl bg-white border border-black/10 p-4 text-center">
-                    <div className="text-xl font-extrabold text-textPrimary">100%</div>
-                    <div className="text-sm text-textSecondary">Commitment</div>
+                  <div className="rounded-xl bg-white dark:bg-slate-800 border border-black/10 p-4 text-center">
+                    <div className="text-xl font-extrabold text-textPrimary dark:text-slate-100">100%</div>
+                    <div className="text-sm text-textSecondary dark:text-slate-300">Commitment</div>
                   </div>
                 </div>
               </motion.div>

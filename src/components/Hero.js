@@ -30,7 +30,7 @@ const Hero = () => {
   };
 
   return (
-    <div name="home" className="min-h-[100vh] w-full bg-gradient-to-br from-white via-accent to-white overflow-hidden pt-20">
+    <div name="home" className="min-h-[100vh] w-full bg-gradient-to-br from-white via-accent to-white dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 overflow-hidden pt-20">
       <div className="max-w-screen-xl mx-auto flex flex-col items-center justify-center min-h-[calc(100vh-80px)] px-4 md:flex-row md:justify-between relative">
         {/* Subtle background elements */}
         <motion.div 
@@ -79,7 +79,7 @@ const Hero = () => {
 
           <motion.h1 
             variants={fadeInUp}
-            className="text-5xl sm:text-7xl font-bold mt-4 text-textPrimary"
+            className="text-5xl sm:text-7xl font-bold mt-4 text-textPrimary dark:text-slate-100"
           >
             Hi, I'm <span className="text-secondary">Mamta</span>
           </motion.h1>
@@ -97,13 +97,13 @@ const Hero = () => {
               wrapper="span"
               speed={50}
               repeat={Infinity}
-              className="text-xl sm:text-2xl text-textSecondary font-bold"
+              className="text-xl sm:text-2xl text-textSecondary dark:text-slate-300 font-bold"
             />
           </motion.div>
 
           <motion.p 
             variants={fadeInUp}
-            className="text-textSecondary/90 py-6 max-w-md leading-relaxed text-lg"
+            className="text-textSecondary/90 dark:text-slate-300 py-6 max-w-md leading-relaxed text-lg"
           >
             I design and build responsive React apps focused on performance and clarity.
           </motion.p>
@@ -146,7 +146,7 @@ const Hero = () => {
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-xl text-textSecondary/70 hover:text-secondary transition-colors duration-300"
+                className="text-xl text-textSecondary/70 dark:text-slate-300 hover:text-secondary transition-colors duration-300"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
                 aria-label={social.label}
@@ -169,7 +169,7 @@ const Hero = () => {
             transition={{ type: "spring", stiffness: 200 }}
           >
             <motion.div 
-              className="absolute -top-4 right-0 bg-white/80 backdrop-blur-sm rounded-xl shadow-lg px-5 py-3 flex items-center gap-3"
+              className="absolute -top-4 right-0 bg-white/80 dark:bg-slate-800/70 backdrop-blur-sm rounded-xl shadow-lg px-5 py-3 flex items-center gap-3"
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.5 }}
@@ -180,8 +180,8 @@ const Hero = () => {
                 transition={{ duration: 2, repeat: Infinity }}
               />
               <div className="flex flex-col">
-                <span className="text-2xl font-bold text-textPrimary">1.8</span>
-                <span className="text-sm text-textSecondary/70">Years of experience</span>
+                <span className="text-2xl font-bold text-textPrimary dark:text-slate-100">1.8</span>
+                <span className="text-sm text-textSecondary/70 dark:text-slate-400">Years of experience</span>
               </div>
             </motion.div>
             
@@ -197,7 +197,7 @@ const Hero = () => {
       </div>
 
       {/* Focus Areas Section */}
-      <div className="relative w-full bg-gradient-to-tr from-white via-accent to-white pt-20 pb-20 overflow-hidden">
+      <div className="relative w-full bg-gradient-to-tr from-white via-accent to-white dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 pt-20 pb-20 overflow-hidden">
         {/* Animated background shapes */}
         <div className="absolute inset-0 overflow-hidden">
           <motion.div
@@ -226,7 +226,7 @@ const Hero = () => {
             className="text-center mb-16"
           >
             <motion.h2 
-              className="text-6xl font-bold text-textPrimary mb-6"
+              className="text-6xl font-bold text-textPrimary dark:text-slate-100 mb-6"
               initial={{ opacity: 0, scale: 0.5 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, ease: "easeOut" }}
@@ -234,7 +234,7 @@ const Hero = () => {
               Focusing on the <span className="text-secondary">best</span>
             </motion.h2>
             <motion.p 
-              className="text-textSecondary text-xl max-w-2xl mx-auto"
+              className="text-textSecondary dark:text-slate-300 text-xl max-w-2xl mx-auto"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
@@ -256,13 +256,13 @@ const Hero = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               whileHover={{ y: -10 }}
-              className="relative bg-white/80 backdrop-blur-sm rounded-2xl p-8 overflow-hidden group shadow-lg hover:shadow-xl transition-all duration-300"
+              className="relative bg-white/80 dark:bg-slate-800/70 backdrop-blur-sm rounded-2xl p-8 overflow-hidden group shadow-lg hover:shadow-xl transition-all duration-300"
             >
               <div className="relative z-10">
-                <h3 className="text-2xl font-bold text-textPrimary mb-4">
+                <h3 className="text-2xl font-bold text-textPrimary dark:text-slate-100 mb-4">
                   <span className="text-secondary">Multiple</span> tech stack
                 </h3>
-                <p className="text-textSecondary text-lg">
+                <p className="text-textSecondary dark:text-slate-300 text-lg">
                   I have worked with multiple technologies and frameworks to build scalable and efficient applications.
                 </p>
               </div>
@@ -309,7 +309,7 @@ const Hero = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
               whileHover={{ y: -10 }}
-              className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300"
+              className="bg-white/80 dark:bg-slate-800/70 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300"
             >
               <div className="flex items-center justify-center gap-8 mb-8">
                 <motion.div
@@ -324,10 +324,10 @@ const Hero = () => {
                   <FaPaintBrush className="w-12 h-12 text-secondary" />
                 </motion.div>
               </div>
-              <h3 className="text-2xl font-bold text-textPrimary mb-4 text-center">
+              <h3 className="text-2xl font-bold text-textPrimary dark:text-slate-100 mb-4 text-center">
                 Dev & <span className="text-secondary">design</span>
               </h3>
-              <p className="text-textSecondary text-lg text-center">
+              <p className="text-textSecondary dark:text-slate-300 text-lg text-center">
                 Excels in both development and design to create a seamless and intuitive user experience.
               </p>
             </motion.div>

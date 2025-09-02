@@ -24,7 +24,7 @@ const Footer = () => {
           
           <div className="flex items-center gap-4">
             <a
-              href={`${process.env.PUBLIC_URL}/mamta-resume11[1].pdf`}
+              href={`${process.env.PUBLIC_URL}/Mamta Kumari Resume.pdf`}
               download
               className="px-4 py-2 rounded-md border border-secondary/30 text-secondary hover:bg-secondary/10 transition-colors text-sm"
             >

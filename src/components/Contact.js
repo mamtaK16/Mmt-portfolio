@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FiMail, FiMapPin, FiExternalLink } from 'react-icons/fi';
-import { FaLinkedin, FaGithub, FaHtml5, FaCss3Alt, FaReact } from 'react-icons/fa';
+import { FaLinkedin, FaHtml5, FaCss3Alt, FaReact } from 'react-icons/fa';
 import { SiJavascript } from 'react-icons/si';
 
 const Contact = () => {
@@ -167,17 +167,6 @@ const Contact = () => {
                   aria-label="LinkedIn"
                 >
                   <FaLinkedin className="text-xl" />
-                </motion.a>
-                <motion.a
-                  href="https://github.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="absolute -bottom-2 left-1/2 -translate-x-1/2 p-3 rounded-xl bg-white text-textPrimary border border-black/10 shadow"
-                  whileHover={{ rotate: [0, -10, 10, 0], scale: 1.05 }}
-                  transition={{ duration: 0.3 }}
-                  aria-label="GitHub"
-                >
-                  <FaGithub className="text-xl" />
                 </motion.a>
               </motion.div>
 

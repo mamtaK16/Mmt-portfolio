@@ -166,7 +166,7 @@ const About = () => {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.3 }}
           viewport={{ once: true, margin: "-100px" }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16"
+          className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 justify-items-center items-start"
         >
           {/* Certificates Section */}
           <motion.div
@@ -174,8 +174,9 @@ const About = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             className="w-full"
+           
           >
-            <div className="flex items-center gap-4 mb-6">
+            <div className="flex items-center gap-4 mb-6" >
               <div className="text-secondary">
                 <FaCertificate className="w-8 h-8" />
               </div>
@@ -184,11 +185,15 @@ const About = () => {
             <motion.div 
               whileHover={{ y: -10 }}
               transition={{ duration: 0.3 }}
-              className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-xl"
+            
+              className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl w-full max-w-2xl h-auto"
             >
-              <h4 className="text-xl font-bold text-textPrimary mb-3">MERN stack development</h4>
-              <p className="text-secondary text-lg mb-2">Aptron Pvt Ltd Institute</p>
-              <p className="text-textSecondary">2023</p>
+              <h4 className="text-xl font-bold text-textPrimary mb-3"   >MERN stack development</h4>
+              <p className="text-secondary text-lg mb-2" >Aptron Pvt Ltd Institute • 2023</p>
+              <p className="text-textSecondary">
+              Focused on core MERN stack technologies and industry-relevant skills development.
+</p> 
+
             </motion.div>
           </motion.div>
 
@@ -208,7 +213,7 @@ const About = () => {
             <motion.div 
               whileHover={{ y: -10 }}
               transition={{ duration: 0.3 }}
-              className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-xl"
+              className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl w-full max-w-2xl h-auto"
             >
               <h4 className="text-xl font-bold text-textPrimary mb-3">B.A (Political Honours)</h4>
               <p className="text-secondary text-lg mb-2">Delhi University • 2023</p>
@@ -217,7 +222,7 @@ const About = () => {
           </motion.div>
 
           {/* Achievements Section */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -237,7 +242,7 @@ const About = () => {
               <h4 className="text-xl font-bold text-textPrimary mb-3">Open source contributor</h4>
               <p className="text-textSecondary">Active contributor to various open-source projects with 1800+ contributions on GitHub</p>
             </motion.div>
-          </motion.div>
+          </motion.div> */}
         </motion.div>
 
         {/* Technical Skills Section */}

@@ -127,7 +127,7 @@ const Hero = () => {
             </Link>
 
             <motion.a
-              href={`${process.env.PUBLIC_URL}/mamta-resume11[1].pdf`}
+              href={`${process.env.PUBLIC_URL}/Mamta Kumari Resume.pdf`}
               download
               className="group relative inline-flex items-center justify-center px-8 py-3 rounded-lg border-2 border-secondary/20 hover:border-secondary text-secondary hover:bg-secondary/5 transition-all duration-300"
             >
